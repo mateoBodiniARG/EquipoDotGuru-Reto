@@ -68,7 +68,7 @@ export default function SubscribeForm() {
 
       <Card className="w-full max-w-[841px] h-auto md:h-[505px] bg-white rounded-[2rem] flex flex-col">
         <CardContent className="flex-grow flex flex-col items-center justify-center space-y-6 md:space-y-12 pt-8 md:pt-12 pb-8 px-4 md:px-8">
-          <img src="/VectorPlane.png" alt="sendIcon" className="w-14" />
+          <img src="./VectorPlane.png" alt="sendIcon" className="w-14" />
           <h2 className="text-2xl md:text-3xl font-bold">SUBSCRIBE</h2>
           <form
             onSubmit={handleSubmit}
