@@ -47,7 +47,7 @@ export default function SubscribeForm() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4">
       {isSubscribeSuccess && (
         <Confetti
           width={window.innerWidth}
@@ -66,13 +66,13 @@ export default function SubscribeForm() {
         <span className="text-white">people subscribed</span>
       </div>
 
-      <Card className="w-[841px] h-[505px] bg-white rounded-[2rem] flex flex-col">
-        <CardContent className="flex-grow flex flex-col items-center justify-center space-y-12 pt-12 pb-8 px-8">
-          <img src="VectorPlane.png" alt="sendIcon" className="w-14" />
-          <h2 className="text-3xl font-bold">SUBSCRIBE</h2>
+      <Card className="w-full max-w-[841px] h-auto md:h-[505px] bg-white rounded-[2rem] flex flex-col">
+        <CardContent className="flex-grow flex flex-col items-center justify-center space-y-6 md:space-y-12 pt-8 md:pt-12 pb-8 px-4 md:px-8">
+          <img src="/VectorPlane.png" alt="sendIcon" className="w-14" />
+          <h2 className="text-2xl md:text-3xl font-bold">SUBSCRIBE</h2>
           <form
             onSubmit={handleSubmit}
-            className="w-full max-w-[500px] flex flex-col items-center space-y-6"
+            className="w-full max-w-[500px] flex flex-col items-center space-y-4 md:space-y-6"
           >
             <div className="w-full">
               <Input
@@ -91,7 +91,7 @@ export default function SubscribeForm() {
             <div className="mt-auto">
               <Button
                 type="submit"
-                className="w-[205px] bg-[#EBFF00] hover:bg-[#d4e600] text-black font-bold rounded-full"
+                className="w-full md:w-[205px] bg-[#EBFF00] hover:bg-[#d4e600] text-black font-bold rounded-full"
               >
                 SUBSCRIBE
               </Button>
